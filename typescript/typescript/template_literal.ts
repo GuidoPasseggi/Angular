@@ -10,7 +10,7 @@
 
   // const salida = nombre + apellido + edad;
   
-  // usemos un 'Template literal' para evitar
+  // usemos un 'Template literal' para ev¸itar
   // tener que hacer concatenaciones con
   // espacios y demases como en JS (ES5)
   const salida = `
