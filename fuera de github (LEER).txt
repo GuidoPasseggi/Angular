@@ -1,0 +1,11 @@
+typescript-importer
+
+viene de la clase 26, la descargué del repo:
+https://github.com/Klerith/webpack-starter-typescript
+(pero le cambié el nombre)
+
+no la subí a mi github porque pesa 126mb y porque supuestamente NO hará falta una vez que usemos Angular
+
+tamb la excluí dentro de GITIGNORE
+
+_____
