@@ -1,1 +1,29 @@
-<h1>Soy un Body Component</h1>
+<!-- https://getbootstrap.com/docs/5.2/components/card/#about <--- ahi saqué el CARD -->
+<!-- https://getbootstrap.com/docs/5.2/components/list-group/#basic-example <--- ahi saqué la LIST -->
+
+<div class="row">
+    <div class="col">
+        <h1>*ngIf</h1>
+        <hr>
+        <!-- notar el *ngIf="mostrar" (mostrar fue declarada 1ero en body.component) -->
+        <div *ngIf="mostrar" class="card text-bg-primary mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase.autor}}</h5>
+                <p class="card-text">{{frase.mensaje}}</p>
+            </div>
+        </div>
+        <!-- notar el EVENTO manejado con JS (click) -->
+        <button (click)="mostrar = !mostrar" class="btn btn-outline-primary w-100">Mostrar/Ocultar</button>
+    </div>
+
+    <div class="col">
+        <h1>*ngFor</h1>
+        <hr>
+        <ul class="list-group">
+            <!-- notar el *ngFor -->
+            <li *ngFor="let personaje of personajes; let i = index" class="list-group-item">
+                {{i+1}} - {{personaje}}
+            </li>
+        </ul>
+    </div>
+</div>

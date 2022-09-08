@@ -1,0 +1,12 @@
+Aclaración del profe:
+
+Código fuente de la sección
+Código fuente de la sección
+Adjunto a esta clase, tienen el código fuente de esta sección por si acaso lo necesitan. No van los node_modules, por lo que si lo descargan y lo quieren probar, deben de ejecutar el siguiente comando
+
+npm install 
+
+IMPORTANTE
+No todas las secciones tienen el código fuente al final de la sección... pero se encuentran en la sección 17 - "Documentaciones útiles"
+
+Esto debido a que estoy actualizando el curso y mi intención es seguir mejorándolo.
