@@ -13,16 +13,16 @@
 
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { __importDefault } from 'tslib';
+// esta linea no se si la puse yo por accidente probando snippets:
+// import { __importDefault } from 'tslib';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { AboutComponent } from './components/about/about.component';
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'about', component: AboutComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
-
-
-
-
-
