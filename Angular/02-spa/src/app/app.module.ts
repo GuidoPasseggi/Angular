@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // Rutas:
 import { APP_ROUTING } from './app.routes';
 
-
-
 //Servicios:
+import { HeroesService } from './services/heroes.service';
 
 // Componentes:
 import { AppComponent } from './app.component';
@@ -16,9 +15,15 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { __importDefault } from 'tslib';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, HeroesComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent,
+    HeroesComponent,
+  ],
   imports: [BrowserModule, APP_ROUTING],
-  providers: [],
+  providers: [HeroesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

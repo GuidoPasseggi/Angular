@@ -13,8 +13,10 @@
 
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+
 // esta linea no se si la puse yo por accidente probando snippets:
-// import { __importDefault } from 'tslib';
+import { __importDefault } from 'tslib';
+
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 
