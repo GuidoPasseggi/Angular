@@ -3,24 +3,28 @@
 
 <!-- el profe usaba la doc de bootstrap v4alpha pero no me funcó ya, asi que lo adapté a bootstrap 5 actual -->
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<!-- <img src="../../../assets/img/aquaman.png" class="card-img-top" alt="..."> -->
 
-  <div class="col">
-    <div class="card">
-      <img src="../../../assets/img/aquaman.png" class="card-img-top" alt="...">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let heroE of heroes">
+    <!-- el ngFor lo itera: -->
+    <!-- y atenti al h-100 que controla el height -->
+    <div class="card h-100">
+      <!-- forma 1: src con interpolación {{}} -->
+      <!-- <img src="{{heroE.img}}" class="card-img-top" alt="..."> -->
+      <!-- forma 2: ngFor + src con [src] para indicarle que "lo maneja angular " -->
+      <img [src]="heroE.img" class="card-img-top" [alt]="heroE.nombre">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
+        <h5 class="card-title">{{heroE.nombre}}</h5>
+        <p class="card-text">{{heroE.bio}}</p>
       </div>
       <button type="button" class="btn btn-outline-primary btn-block">
         Ver más...
       </button>
       <div class=" card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">{{heroE.aparicion}}</small>
       </div>
     </div>
   </div>
-
 
 </div>
