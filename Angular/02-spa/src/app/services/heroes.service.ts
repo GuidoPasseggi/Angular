@@ -2,6 +2,7 @@
 
 import { Injectable } from '@angular/core';
 
+// Injectable es un "decorador"
 @Injectable({ providedIn: 'root' })
 export class HeroesService {
   // 1) agregamos lo siguiente q es un arreglo de objetos (PRIVATE ojo):
@@ -69,7 +70,8 @@ export class HeroesService {
   // 3) ver ngOnInit en heroes.component.ts
 }
 
-//creamos una INTERFAZ para que al agregar heroes o datos en los heroes, solo permita si se cumplen ciertas carateristicas:
+//creamos una INTERFAZ (es como una clase "tonta")
+//para que al agregar heroes o datos en los heroes, solo permita si se cumplen ciertas carateristicas:
 export interface Heroe {
   nombre: string;
   bio: string;
