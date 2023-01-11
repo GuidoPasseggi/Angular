@@ -7,7 +7,7 @@
 <!-- <img src="../../../assets/img/aquaman.png" class="card-img-top" alt="..."> -->
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col" *ngFor="let heroE of heroes">
+  <div class="col" *ngFor="let heroE of heroes; let i=index">
     <!-- el ngFor lo itera: -->
     <!-- y atenti al h-100 que controla el height -->
     <div class="card h-100">
@@ -19,9 +19,11 @@
         <h5 class="card-title">{{heroE.nombre}}</h5>
         <p class="card-text">{{heroE.bio}}</p>
       </div>
-      <button type="button" class="btn btn-outline-primary btn-block">
+      <!-- <button type="button" class="btn btn-outline-primary btn-block">
         Ver más...
-      </button>
+      </button> -->
+      <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más</a>
+
       <div class=" card-footer">
         <small class="text-muted">{{heroE.aparicion}}</small>
       </div>
