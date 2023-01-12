@@ -19,10 +19,14 @@
         <h5 class="card-title">{{heroE.nombre}}</h5>
         <p class="card-text">{{heroE.bio}}</p>
       </div>
-      <!-- <button type="button" class="btn btn-outline-primary btn-block">
+
+      <!-- el i de aca es el mismo i del ngFor arriba let i=index -->
+      <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
         Ver más...
-      </button> -->
-      <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más</a>
+      </button>
+      <!-- reemplazo del boton con href: -->
+      <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más</a> -->
+
 
       <div class=" card-footer">
         <small class="text-muted">{{heroE.aparicion}}</small>
